@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "sap-hana-mcp-server: SAP HANA MCP server: Claude & ChatGPT read SAP S/4HANA with SQL, guided by SAP's own data dictionary and CDS views. Read-only."
+message: "If you use this software, please cite AnythingMCP, which it is built on."
+type: software
+authors:
+  - name: "helpcode.ai GmbH"
+repository-code: "https://github.com/HelpCode-ai/sap-hana-mcp-server"
+url: "https://anythingmcp.com/guides/connect-sap-hana-to-claude"
+license: AGPL-3.0-only
+references:
+  - type: software
+    title: "AnythingMCP"
+    authors:
+      - name: "helpcode.ai GmbH"
+    repository-code: "https://github.com/HelpCode-ai/anythingmcp"

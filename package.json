@@ -1,0 +1,17 @@
+{
+  "name": "sap-hana-mcp-server",
+  "private": true,
+  "type": "module",
+  "description": "SAP HANA MCP server: Claude & ChatGPT read SAP S/4HANA with SQL, guided by SAP's own data dictionary and CDS views. Read-only.",
+  "scripts": {
+    "smoke": "node scripts/smoke.mjs",
+    "render-tools": "node scripts/render-tools.mjs",
+    "sync": "node scripts/sync-adapter.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

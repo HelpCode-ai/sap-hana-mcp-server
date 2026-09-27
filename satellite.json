@@ -1,0 +1,31 @@
+{
+  "$comment": "Read by scripts/install.sh, scripts/smoke.mjs and the sync workflow. Generated; edit satellites.config.json in HelpCode-ai/anythingmcp instead.",
+  "repo": "sap-hana-mcp-server",
+  "owner": "HelpCode-ai",
+  "mainRepo": "HelpCode-ai/anythingmcp",
+  "adapters": [
+    {
+      "slug": "sap-s4hana-hana",
+      "region": "intl",
+      "requiredEnvVars": [
+        "SAP_HANA_HOST",
+        "SAP_HANA_PORT",
+        "SAP_HANA_TENANT",
+        "SAP_HANA_SCHEMA",
+        "SAP_CLIENT",
+        "SAP_LANGUAGE",
+        "SAP_HANA_TLS",
+        "SAP_HANA_USER",
+        "SAP_HANA_PASSWORD"
+      ]
+    }
+  ],
+  "setup": {
+    "type": "adapter"
+  },
+  "smokeCall": {
+    "tool": "sap_org_structure",
+    "args": {},
+    "mayFailWithoutCredentials": true
+  }
+}
