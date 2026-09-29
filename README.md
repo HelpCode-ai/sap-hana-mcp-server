@@ -7,7 +7,7 @@
 SAP HANA MCP Server gives Claude, ChatGPT, Copilot and Cursor 10 tools for SAP HANA: SAP's data dictionary (table and field labels, code values, join paths, CDS views), the organization structure and read-only SQL. Every tool only reads. It runs on AnythingMCP: one click on AnythingMCP Cloud, or self-hosted with Docker. Credentials are stored encrypted and every call is audited.
 
 **Last verified:** 2026-09-27 against an SAP S/4HANA 2025 Private Cloud system, a QAS copy of production (every tool run live through the adapter's live test suite).  
-**Adapter synced:** <!-- synced -->2026-09-27
+**Adapter synced:** <!-- synced -->2026-09-29
 
 Maintained by [helpcode.ai](https://helpcode.ai), the team that builds and maintains [AnythingMCP](https://github.com/HelpCode-ai/anythingmcp).
 
@@ -111,6 +111,13 @@ More in [examples/prompts.md](examples/prompts.md).
 - **Response mapping** drops or reshapes fields per tool before they reach the model, e.g. bank details or personal data.
 - **Audit log:** every call is recorded with input, output, duration and status, in your own database when self-hosted.
 - **SSO, RBAC and SCIM** are included in the self-hosted build.
+
+## Guides
+
+- [Use cases](docs/use-cases.md)
+- [Architecture](docs/architecture.md)
+- [Security and permissions](docs/security.md)
+- [Compared with other ways to reach SAP](docs/comparison.md)
 
 ## FAQ
 
